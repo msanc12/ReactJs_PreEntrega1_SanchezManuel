@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#712cf9">
+    <title>Tarea Final Javascript - Registro de Visitas</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/5.3/examples/cover/cover.css" rel="stylesheet">
+    <script src="https://getbootstrap.com/docs/5.3/assets/js/color-modes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+  </head>
+  <body class="d-flex h-100 text-center text-bg-dark">
+    <div class="container">
+        <header>
+            <div class="py-5 text-center">
+                <h2>Registro de Visitas</h2>
+            </div>
+        </header>
+        <main>
+            <p class="text-start text-break">Objetivo: Registrar las visitas en la empresa y si una persona está en la lista negra. <br>Se procederá a ejecutar un protocolo, llamado <b>Orden 66</b>: En donde comunicar a seguridad que retire a la persona.<br>
+            EL DNI es la llave. Los DNI que estan registrado en lista negra son:<br>
+            12345678, 33333333, 44444444<br>
+            </p>
+            <div class="row">
+                    <h4 class="mb-3">Registro</h4>
+                    <div class="needs-validation">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="firstName" class="form-label">Nombres</label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="Nombres" value="" required>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="lastName" class="form-label">Apellidos</label>
+                                        <input type="text" class="form-control" id="lastName" placeholder="Apellidos" value="" required>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="DNI" class="form-label">DNI</label>
+                                        <input type="text" class="form-control" id="DNI" placeholder="DNI" value="" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div id="divMje"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div id="resultado"></div>
+                            </div>
+                          </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button id="btn_RegistrarValidar" class="btn btn-primary" type="button" >Registrar y Validar</button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-12">
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Nombres</th>
+                                    <th scope="col">Apellidos</th>
+                                    <th scope="col">DNI</th>
+                                  </tr>
+                                </thead>
+                                <tbody id="ListaVisitas">
+                                  
+                                </tbody>
+                              </table>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+            </div>
+            <hr>
+            <h1>Base de datos de Personas del Imperio</h1>
+            <br>
+            <div class="bd-example-snippet bd-code-snippet">
+                <div class="bd-example m-0 border-0">
+                    <div id="resultadoBDImperio" class="row row-cols-1 row-cols-md-3 g-4">
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="my-5 pt-5 text-body-secondary text-center text-small  text-bg-dark">
+            <p class="mb-1">&copy; 2024 Company S.A.</p>
+            <ul class="list-inline">
+        </footer>
+    </div>
+    
+    <script src="./js/main.js"></script>
+  </body>
+</html>
