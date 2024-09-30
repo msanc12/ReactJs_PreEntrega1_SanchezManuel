@@ -1,7 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import './App.css';
+import NavBar from './componentes/NavBar';
+import ItemListContainer from './componentes/ItemListContainer';
+
+function App() {
+  return (
+    <div className="App">
+      <NavBar />
+      <ItemListContainer greeting="Bienvenido a nuestra tienda!" />
+      {/* Otros componentes o contenido */}
+    </div>
+  );
+}
+
+export default App;
+
+
+/*
+//import { useState } from 'react'
+//import reactLogo from './assets/react.svg'
+//import viteLogo from '/vite.svg'
+//import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -33,3 +52,4 @@ function App() {
 }
 
 export default App
+*/
